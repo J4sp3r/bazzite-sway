@@ -26,7 +26,15 @@ dnf5 install -y \
     brightnessctl \
     playerctl \
     xdg-desktop-portal-wlr \
-    NetworkManager-tui
+    NetworkManager-tui \
+    autotiling \
+    wdisplays \
+    swayosd \
+    gammastep \
+    network-manager-applet \
+    blueman \
+    pavucontrol \
+    nwg-look
 
 ### Identify this image as bazzite-sway to ublue tooling and os-release.
 IMAGE_INFO="/usr/share/ublue-os/image-info.json"
