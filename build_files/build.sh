@@ -35,10 +35,10 @@ dnf5 install -y \
 
 ### Sway UX extras that aren't in Fedora core — pull from COPRs, then disable
 ### the COPRs so they don't stay enabled on installed systems.
-dnf5 -y copr enable erikreider/SwayNotificationCenter
+dnf5 -y copr enable erikreider/SwayOSD
 dnf5 -y copr enable tofik/nwg-shell
-dnf5 install -y swayosd nwg-look autotiling
-dnf5 -y copr disable erikreider/SwayNotificationCenter
+dnf5 install -y swayosd nwg-look
+dnf5 -y copr disable erikreider/SwayOSD
 dnf5 -y copr disable tofik/nwg-shell
 
 ### Identify this image as bazzite-sway to ublue tooling and os-release.
