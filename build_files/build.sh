@@ -19,10 +19,8 @@ dnf5 install -y \
     mako \
     grim \
     slurp \
-    wl-clipboard \
     brightnessctl \
     playerctl \
-    polkit-gnome \
     xdg-desktop-portal-wlr \
     NetworkManager-tui
 
