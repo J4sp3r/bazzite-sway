@@ -160,7 +160,9 @@ ostree-rechunk $target_image=image_name $tag=default_tag:
     fi
 
     # You can use your own base image here to avoid pulling fedora-bootc
-    RPM_OSTREE_CHUNKER_IMAGE="quay.io/fedora/fedora-bootc:latest"
+    # Keep this on the same Fedora major as the base image. ":latest" floats
+    # across Fedora releases and will silently skew from the image's rpmdb.
+    RPM_OSTREE_CHUNKER_IMAGE="quay.io/fedora/fedora-bootc:44"
 
     podman run --rm \
       --pull=newer \
